@@ -1,0 +1,230 @@
+.cont-test{
+  position: relative;
+  height: 50vh;
+  background-image: url("../img/background-2.JPEG");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.cont-test .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .7;
+}
+.cont-test h2{
+    text-align: center;
+    margin: 20px 0;
+}
+.cont-test p{
+    font-size: .8em;
+    width: 100%;
+    text-align: center;
+}
+.cont-test span{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.cont-test  .cus-cont:not(:first-of-type){
+    display: none;
+}
+/* start our-project  */
+.our-project{
+    width: 100%;
+}
+.our-project .cont-our-pro{
+    position: relative;
+    overflow: hidden;
+    width: 80%;
+    padding-bottom: 50px;
+    margin: auto;
+}
+.cont-our-pro h2{
+    position: relative;
+    color: #000;
+    margin-top: 50px;
+}
+.cont-our-pro .filter-btn span{
+    border: 1px solid;
+    display: inline-block;
+    background: #eee;
+    padding: 0 15px;
+    height: 25px;
+    line-height: 25px;
+    color: rgb(63, 60, 60);
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 20px 0;
+}
+.filter-btn span.act{
+   background: #009688;
+   color: #FFF;
+}
+.cont-img-our-pro .cont-img{
+    position: relative;
+    cursor: pointer;
+    width: 32.666666666666664%;
+    height: 170px;
+    float: left;
+    /* background-color: green; */
+    margin-bottom: 1%;
+    margin-right: 1%
+}
+.cont-img-our-pro .cont-img img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+.cont-img-our-pro .cont-img:last-child{
+    margin-right: 0;
+}
+.cont-img-our-pro .cont-img:hover .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #009688;
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+    text-align: center;
+    line-height: 170px;
+    z-index: 66;
+    /* display: none; */
+}
+/* end our-project  */
+
+ /* start max-width 420px */
+/* cutom media  */
+/* start media for our project and footer*/
+@media(max-width: 420px),
+(min-width: 421px) and (max-width: 767px){
+
+    .our-project .cont-our-pro h2{
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    .fram-work-underLine:before{
+        position: absolute;
+        left: 37%;
+    }
+    .cont-our-pro .filter-btn span{
+        font-size: .7em;
+        margin: 0;
+    }
+    .cont-our-pro .filter-btn span {
+        font-size: 1em;
+    }
+    
+    .cont-img-our-pro .cont-img,
+    .footer .cont-footer section{
+        float: none;
+        width: 100% !important;
+    }
+    .cont-img-our-pro .cont-img:first-child{
+        margin-top: 25px;
+    }
+    .footer .cont-footer section p{
+        width: 100% !important;
+        text-align: center;
+        font-size: .7em !important;
+        margin: 10px 0 !important;
+    }
+    .footer .cont-footer section h2{
+        text-align: center;
+    }
+    .cont-footer .cont-sectin-icon{
+        text-align: center;
+    }
+    .cont-footer .cont-sectin-icon span {
+        width: 8% !important;
+        height: 20px !important;
+    }
+   
+    .footer .cont-footer section:nth-of-type(2) h2,
+    .footer .cont-footer section:nth-of-type(2) .cont-sectin-icon{
+        margin-top: 10px;
+    }
+    .footer .cont-footer section:nth-of-type(2) span{
+        width: 33% !important;
+        padding: 0 !important;
+    }
+    .cont-footer section:nth-of-type(4) .cont-footer-img > div{
+        float: none !important;
+    }
+    .cont-footer section:nth-of-type(4) .cont-footer-img {
+        overflow: hidden;
+        margin: 5% 0;
+    }
+   
+    .cont-footer section:nth-of-type(4) .mains-containner, 
+    .cont-footer section:nth-of-type(3) .mains-containner {
+        margin: 10px 0 !important;
+    }
+    .cont-footer section:nth-of-type(4) .footer-img,
+    .cont-footer section:nth-of-type(4) .footer-content {
+        margin: auto !important;
+    } 
+    .cont-footer section:nth-of-type(4) .footer-content span{
+        display: block !important;
+        text-align: center;
+    }
+
+}
+
+/* and custom media  */
+/* end media for our project and footer */
+/* end max-width 420px */
+
+/* --------- */
+
+/* start max-width 421px and min-width 767px */
+/* start phone media for our project and footer */
+@media(min-width: 421px) and (max-width: 767px){
+    .filter-btn{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .cont-img-our-pro .cont-img{
+        float: left !important;
+        width: 49% !important;
+        margin: 0 !important;
+        margin-bottom: 1% !important;
+    }
+    .cont-img-our-pro .cont-img:nth-of-type(2),
+    .cont-img-our-pro .cont-img:first-of-type,
+    .cont-img-our-pro .cont-img:last-child{
+        margin-right: 0% !important;
+        width: 49% !important;
+    }
+    .cont-footer section h2,
+    .footer .cont-footer p,
+    .cont-footer .cont-sectin-icon {
+        text-align: left !important;
+    }
+
+    .footer .cont-footer section:nth-of-type(2) span {
+        width: 32% !important;
+        font-size: .8em !important;
+    }
+
+    .cont-footer section:nth-of-type(4) .footer-content {
+        width: 30% !important;
+    }
+
+    .cont-footer section:nth-of-type(4) .cont-footer-img > div {
+        float: left !important;
+    }
+    .cont-footer section .footer-img{
+        width: 25% !important;
+    }
+    
+}
+/* end phone media for our project and footer */
+/* end max-width 421px and min-width 767px */

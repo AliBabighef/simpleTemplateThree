@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "booter zero zero";
+}
+.fram-left{
+    float: left;
+    width: 50%;
+}
+.fram-right{
+    float: right;
+    width: 50%;
+}
+.fram-head{
+    color: #FFF;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.fram-custom-color{
+    color: #5be2d6;
+    text-transform: uppercase;
+}
+.fram-custom-center-text{
+    text-align: center;
+}
+.fram-custom-centring-ellement{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.fram-containner{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.cont-content{
+    /* background: #DDD; */
+    z-index: 6666;
+    position: relative;
+    height: 100vh;
+    width: 80%;
+    margin: auto;
+}
+.fram-work-underLine:before{
+    content: "";
+    width: 4%;
+    height: 5px;
+    margin: 20px 0;
+    background: #5be2d6;
+    display: block;
+    position: absolute;
+    z-index: 677;
+    left: 0;
+    top: 50%;
+}
+.clearFix{
+    clear: both;
+}

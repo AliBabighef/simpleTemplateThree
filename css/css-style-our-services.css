@@ -1,0 +1,343 @@
+
+/* start our serveice */
+.content-our-services{
+    width: 100%;
+    /* height: 100%; */
+    /* background-color: #DDD; */
+}
+.content-our-services .contHeader{
+    position: relative;
+}
+.content-our-services .contHeader h2{
+    margin-top: 30px;
+    padding: 15px 0;
+    color: #000;
+    width: 100%;
+}
+
+.content-our-services img{
+    width: 50px;
+    height: 40px;
+}
+.content-our-services .box{
+    float: left;
+    width: 32.33%;
+    margin-bottom: 30px;
+    margin-top: 25px;
+    margin-right: 1%;
+}
+.box .content-box{
+    width: 80%;
+}
+.box .icon-box{
+    width: 20%;
+}
+.box h2{
+    color: rgb(59, 53, 53);
+    font-size: 1em;
+    margin-left: 15px;
+}
+.box p{
+    font-size: 0.75em;
+    margin: 5px 0;
+    margin-left: 15px;
+}
+.content-our-services .box:nth-of-type(4),
+.content-our-services .box:nth-of-type(7){
+    /* background:red; */
+    margin-right: 0;
+    width: 33.33%;
+}
+/* end our serveice */
+hr{
+    margin-bottom: 30px;
+}
+/* start ourTeam  */
+.containner-out-work{
+    /* background-color: #DDD; */
+    min-height: 240px;
+    position: relative;
+}
+.containner-out-work .cont-content-our-work{
+    width: 30%;
+}
+.containner-out-work .cont-content-our-work p{
+    font-size: 1em;
+    margin: 10px 0;
+    width: 185px;
+}
+.containner-out-work .cont-content-our-work h2{
+    color: black;
+}
+.containner-out-work .cont-content-our-work-images{
+    width: 70%;
+    min-height: 240px;
+    height: 240px;
+    position:relative;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+.containner-out-work .cont-content-our-work-images .cont-img{
+    position: relative;
+    width: 24%;
+    float: left;
+    margin-right: 1%;
+    height: 100%;
+}
+
+.cont-content-our-work-images .cont-img::before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "jhan and jholly";
+    line-height: 240px;
+    width: 100%;
+    height: 100%;
+    background-color: #009688;
+    opacity: .8;
+    text-align: center;
+    font-size: .8em;
+    font-weight: bold;
+    color: #FFF;
+    text-transform: capitalize;
+    display: none;
+}
+.cont-content-our-work-images .cont-img:hover:before{
+    display: block;
+    cursor: pointer;
+}
+
+.cont-content-our-work-images .cont-img.act:first-of-type:before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "jhon albert";
+    line-height: 240px;
+    width: 100%;
+    height: 100%;
+    background-color: #009688;
+    opacity: .8;
+    text-align: center;
+    font-size: .8em;
+    font-weight: bold;
+    color: #FFF;
+    text-transform: capitalize;
+    display: block;
+}
+.cont-content-our-work-images .cont-img.act:nth-of-type(2):before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "albert anch";
+    line-height: 240px;
+    width: 100%;
+    height: 100%;
+    background-color: #009688;
+    opacity: .8;
+    text-align: center;
+    font-size: .8em;
+    font-weight: bold;
+    color: #FFF;
+    text-transform: capitalize;
+    display: block;
+}
+.cont-content-our-work-images .cont-img.act:nth-of-type(3):before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "alezabit jollya";
+    line-height: 240px;
+    width: 100%;
+    height: 100%;
+    background-color: #009688;
+    opacity: .8;
+    text-align: center;
+    font-size: .8em;
+    font-weight: bold;
+    color: #FFF;
+    text-transform: capitalize;
+    display: block;
+}
+.cont-content-our-work-images .cont-img.act:last-child:before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "jhan and jholly";
+    line-height: 240px;
+    width: 100%;
+    height: 100%;
+    background-color: #009688;
+    opacity: .8;
+    text-align: center;
+    font-size: .8em;
+    font-weight: bold;
+    color: #FFF;
+    text-transform: capitalize;
+    display: block;
+}
+
+.containner-out-work .cont-content-our-work-images .cont-img:last-child{
+    margin-right: 0;
+    width: 25%;
+}
+.containner-out-work .cont-content-our-work-images .cont-img img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* end ourTeam  */
+/* start media for our services  */
+@media(max-width: 420px),
+(min-width: 421px) and (max-width: 767px){
+
+    /* .content-our-services {
+
+        background-color: #DDD;
+
+    } */
+    .content-our-services .contHeader h2{
+        text-align: center;
+        padding: 0;
+    }
+    .fram-work-underLine:before{
+        width: 10%;
+        position: absolute;
+        left: 30%;
+        top: 30%;
+    }
+    .content-our-services .box,
+    .content-our-services .box:nth-of-type(4), 
+    .content-our-services .box:nth-of-type(7) { 
+        width: 100%;
+        float: none;
+        background: #eee;
+        margin-bottom: 15px;
+        padding: 10px 0;
+    }
+    .content-our-services .box h2{
+        text-align: center;
+    }
+    .content-our-services .box p{
+        text-align: center;
+    }
+    .box .content-box{
+        float: none;
+        width: 100%;
+    }
+    .box .icon-box{
+        float: none;
+        width: 100%;
+    }
+    .content-our-services img {
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+}
+@media(min-width: 421px) and (max-width: 767px){
+
+    .fram-work-underLine:before{
+        width: 7%;
+        position: absolute;
+        left: 43% !important;
+        top: 30%;
+    }
+
+}
+
+/* end media for our services  */
+/* start  meadia for our work */
+@media(max-width: 420px),
+(min-width: 421px) and (max-width: 767px){
+
+    .containner-out-work .cont-content-our-work,
+    .containner-out-work .cont-content-our-work-images{
+        width: 100%;
+        float: none;
+    }
+    .containner-out-work .cont-content-our-work h2{
+        text-align: center;
+    }
+    .containner-out-work .cont-content-our-work p{
+        width: 100%;
+        text-align: center;
+        font-size: .8em;
+    }
+    .containner-out-work .cont-content-our-work-images .cont-img,
+    .containner-out-work .cont-content-our-work-images .cont-img:last-child {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    .cont-test{
+        height: 25vh !important;
+    }
+    .cont-test .fram-custom-centring-ellement{
+        position: static;
+        text-align: center;
+        font-size: .8em;
+        width: 100%;
+        position: absolute;
+        margin-top: 20px;
+    }
+
+}
+/* start media max-widt 767px  */
+@media(min-width: 421px) and (max-width: 767px){
+
+    .containner-out-work .cont-content-our-work-images .cont-img{
+        float: left;
+        width: 49%;
+    }
+    .containner-out-work .cont-content-our-work-images .cont-img:last-child,
+    .containner-out-work .cont-content-our-work-images .cont-img:nth-of-type(2){
+        margin-right: 0;
+        width: 50%;
+    }
+
+}
+/* start media max width 991px  */
+@media(min-width: 768px) and (max-width: 991px){
+    .content-our-services .box{
+        width: 49% !important;
+        background-color: #eee;
+        margin: 1% 0 0 1%;
+    }
+    .content-our-services .box:nth-of-type(2),
+    .content-our-services .box:nth-of-type(4),
+    .content-our-services .box:nth-of-type(7){
+        margin-left: 0;
+        width: 50% !important;
+    }
+    .fram-work-underLine:before{
+        position: absolute;
+        top: 18%;
+    }
+    .content-our-services .box:nth-of-type(7),
+    .content-our-services .box:nth-of-type(8){
+        margin-bottom: 35px;
+    }
+    .clearFix{
+        clear: right !important;
+    }
+    .cont-test{
+        height: 40vh !important;
+    }
+    .content-our-services .contHeader h2,
+    .cont-test {
+        padding: 0;
+        margin: 25px 0 0 0;
+    }
+    .containner-out-work .cont-content-our-work,
+    .containner-out-work .cont-content-our-work-images{
+        float: none;
+        width: 100%;
+    }
+    .containner-out-work .cont-content-our-work p{
+        width: 100%;
+    }
+    
+}
+/* end  meadia for our work */
